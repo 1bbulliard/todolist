@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		DFF7519127373FB000F1C77A /* todolistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7518127373FAF00F1C77A /* todolistApp.swift */; };
 		DFF7519227373FB000F1C77A /* todolistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7518127373FAF00F1C77A /* todolistApp.swift */; };
-		DFF7519327373FB000F1C77A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7518227373FAF00F1C77A /* ContentView.swift */; };
-		DFF7519427373FB000F1C77A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7518227373FAF00F1C77A /* ContentView.swift */; };
 		DFF7519527373FB000F1C77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF7518327373FB000F1C77A /* Assets.xcassets */; };
 		DFF7519627373FB000F1C77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF7518327373FB000F1C77A /* Assets.xcassets */; };
+		DFF751A12737401000F1C77A /* listview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF751A02737401000F1C77A /* listview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DFF7518127373FAF00F1C77A /* todolistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistApp.swift; sourceTree = "<group>"; };
-		DFF7518227373FAF00F1C77A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFF7518327373FB000F1C77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFF7518827373FB000F1C77A /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF7518E27373FB000F1C77A /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF7519027373FB000F1C77A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DFF751A02737401000F1C77A /* listview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +44,12 @@
 		DFF7517B27373FAF00F1C77A = {
 			isa = PBXGroup;
 			children = (
-				DFF7518027373FAF00F1C77A /* Shared */,
+				DFF7518127373FAF00F1C77A /* todolistApp.swift */,
+				DFF7518327373FB000F1C77A /* Assets.xcassets */,
+				DFF7519F27373FE700F1C77A /* views */,
 				DFF7518F27373FB000F1C77A /* macOS */,
 				DFF7518927373FB000F1C77A /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		DFF7518027373FAF00F1C77A /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				DFF7518127373FAF00F1C77A /* todolistApp.swift */,
-				DFF7518227373FAF00F1C77A /* ContentView.swift */,
-				DFF7518327373FB000F1C77A /* Assets.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		DFF7518927373FB000F1C77A /* Products */ = {
@@ -76,6 +67,14 @@
 				DFF7519027373FB000F1C77A /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		DFF7519F27373FE700F1C77A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DFF751A02737401000F1C77A /* listview.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFF7519327373FB000F1C77A /* ContentView.swift in Sources */,
+				DFF751A12737401000F1C77A /* listview.swift in Sources */,
 				DFF7519127373FB000F1C77A /* todolistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFF7519427373FB000F1C77A /* ContentView.swift in Sources */,
 				DFF7519227373FB000F1C77A /* todolistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
