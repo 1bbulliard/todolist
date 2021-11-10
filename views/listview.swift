@@ -9,35 +9,35 @@ import SwiftUI
 
 struct listview: View {
     @State var items: [String] =
-[
-"first line",
-"Second line",
-"Third line",
-"4th line"
-]
+    [
+        "first line",
+        "Second line",
+        "Third line",
+        "4th line"
+    ]
     var body: some View {
+        NavigationView{
         List{
             ForEach(items, id: \.self) {item in listrowview(title: item)
-                    
+                
+                    .navigationTitle("hello")
+                    .navigationBarItems(
+                        leading: EditButton(),
+                        trailing:
+                            NavigationLink("add", destination: Text("Destination")))
+                
             }
             
-        }
-     
+        }.navigationTitle("hello")
+        
         
     }
+}
+}
 
-}
-struct listrowview: View {
-    let title: String
-    var body: some View {
-        HStack {
-            Image(systemName: "checkmark.circle")
-            Text(title)
-        }
-    }
-}
+
 struct listview_Previews: PreviewProvider {
     static var previews: some View {
-     listview()
+        listview()
     }
 }
