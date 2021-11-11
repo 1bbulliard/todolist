@@ -9,8 +9,9 @@
 
 import SwiftUI
 
-struct listview: View {
- //   @ObservedObject var itemrecx = Itemrec()
+struct listview: View{
+  
+    
     
     @State var items: [ItemModel] =
     [
