@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF75D2F4273B46ED00BDF746 /* addview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75D2F3273B46ED00BDF746 /* addview.swift */; };
+		DF75D2F7273CB3D600BDF746 /* itemmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75D2F6273CB3D600BDF746 /* itemmodel.swift */; };
 		DFF7519127373FB000F1C77A /* todolistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7518127373FAF00F1C77A /* todolistApp.swift */; };
 		DFF7519227373FB000F1C77A /* todolistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7518127373FAF00F1C77A /* todolistApp.swift */; };
 		DFF7519527373FB000F1C77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF7518327373FB000F1C77A /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		DF75D2F3273B46ED00BDF746 /* addview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addview.swift; sourceTree = "<group>"; };
+		DF75D2F6273CB3D600BDF746 /* itemmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemmodel.swift; sourceTree = "<group>"; };
 		DFF7518127373FAF00F1C77A /* todolistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistApp.swift; sourceTree = "<group>"; };
 		DFF7518327373FB000F1C77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFF7518827373FB000F1C77A /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,9 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF75D2F5273CB39800BDF746 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DF75D2F6273CB3D600BDF746 /* itemmodel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		DFF7517B27373FAF00F1C77A = {
 			isa = PBXGroup;
 			children = (
+				DF75D2F5273CB39800BDF746 /* model */,
 				DFF7518127373FAF00F1C77A /* todolistApp.swift */,
 				DFF7518327373FB000F1C77A /* Assets.xcassets */,
 				DFF7519F27373FE700F1C77A /* views */,
@@ -184,6 +195,7 @@
 				DF75D2F4273B46ED00BDF746 /* addview.swift in Sources */,
 				DFF751A12737401000F1C77A /* listview.swift in Sources */,
 				DFF7519127373FB000F1C77A /* todolistApp.swift in Sources */,
+				DF75D2F7273CB3D600BDF746 /* itemmodel.swift in Sources */,
 				DFF751C7273891F700F1C77A /* listrowview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

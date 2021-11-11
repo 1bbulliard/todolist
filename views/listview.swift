@@ -4,27 +4,33 @@
 //
 //  Created by Bob Bulliard on 11/6/21.
 //
+// from video https://www.youtube.com/watch?v=SMt4_WUdKag
+
 
 import SwiftUI
 
 struct listview: View {
-    @State var items: [String] =
+ //   @ObservedObject var itemrecx = Itemrec()
+    
+    @State var items: [ItemModel] =
     [
-        "first line",
-        "Second line",
-        "Third line",
-        "4th line"
+        ItemModel(title: "this is the first", iscompleted: false),
+        ItemModel(title: "this is the second", iscompleted: true),
+        ItemModel(title: "this is the third", iscompleted: true)
     ]
+    
+    
     var body: some View {
         NavigationView{
-        List{
-            ForEach(items, id: \.self) {item in listrowview(title: item)
-                
-                    .navigationTitle("hello")
+        List {
+            ForEach(items) {item in
+             listrowview(item: item)
+                }
+        .navigationTitle("hello")
                     .navigationBarItems(
                         leading: EditButton(),
                         trailing:
-                            NavigationLink("add", destination: Text("Destination")))
+                            NavigationLink("Add", destination: addview()))
                 
             }
             
@@ -32,7 +38,7 @@ struct listview: View {
         
         
     }
-}
+
 }
 
 

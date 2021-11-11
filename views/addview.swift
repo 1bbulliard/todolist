@@ -15,14 +15,26 @@ struct addview: View {
                 TextField("Type something here", text: $textfieldtext)
                     .padding(.horizontal)
                     .frame (height: 55)
-                ///    .background(Color(cgColor: CGColor))
+                
+                    
                     .foregroundColor(.blue)
                 .cornerRadius(10)
+                Button {
+                    
+                } label: {
+                 Text("Save")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .background(Color.accentColor)
+                        .frame (height: 55)
+                        .frame(maxWidth: .infinity)
+                }
+
             }
                         
             .padding(16)
         }
-            .navigationTitle("Add an item /")
+            .navigationTitle("Add an item:")
             .foregroundColor(.blue)
     }
 }

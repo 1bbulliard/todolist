@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct listrowview: View {
-    let title: String
+    let item: ItemModel
     var body: some View {
         HStack {
-            Image(systemName: "checkmark.circle")
-            Text(title)
+            Image(systemName: item.iscompleted ? "checkmark.circle" : "circle.circle")
+                .foregroundColor(item.iscompleted ? .green : .red)
+            Text(item.title)
+                Spacer()
+            /* spacer lines all to the left*/
         }
     }
 }
 
-struct listrowview_Previews: View {
-    let title: String
-    var body: some View {
-        HStack {
-            Image(systemName: "checkmark.circle")
-            Text(title)
-        }
+struct listrowview_Previews: PreviewProvider {
+    static var item1 = ItemModel(title: "first item", iscompleted: false)
+    static var item2 = ItemModel(title: "second item", iscompleted: true)
+    
+    static var previews: some View{
+    Group {
+        listrowview(item: item1)
+        listrowview(item: item2)
     }
+    .previewLayout(.sizeThatFits)
+}
 }
